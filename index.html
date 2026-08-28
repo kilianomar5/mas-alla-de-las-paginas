@@ -1,318 +1,124 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Más Allá de las Páginas | by Adrián</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        vicePink: '#ff007f',
-                        viceCyan: '#00f3ff',
-                        viceOrange: '#ff7a00',
-                        darkBg: '#0b0c10',
-                    },
-                    fontFamily: {
-                        gta: ['"Bebas Neue"', 'sans-serif'],
-                        mono: ['"Roboto Mono"', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        body { background-color: #0b0c10; overflow-x: hidden; }
-        
-        .gta-title {
-            background: linear-gradient(90deg, #ff7a00, #ff007f, #00f3ff);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 10px rgba(255, 0, 127, 0.3);
-        }
+  <meta name="google-site-verification" content="EpSRy17AOcR-W1IvcCrsLweRz1LA7a_r6x792xSBMJ0" />
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="/favicon-180.png" />
 
-        .book-page {
-            background: linear-gradient(180deg, rgba(20, 20, 30, 0.9) 0%, rgba(10, 10, 15, 0.9) 100%);
-            border: 1px solid #ff007f;
-            box-shadow: -5px 0 15px rgba(0, 243, 255, 0.2), 5px 0 15px rgba(255, 0, 127, 0.2);
-            position: relative;
-        }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        @media (min-width: 1024px) {
-            .book-spine::after {
-                content: '';
-                position: absolute;
-                top: 0; right: 0; bottom: 0;
-                width: 2px;
-                background: linear-gradient(180deg, #00f3ff, #ff007f);
-                box-shadow: 0 0 10px #ff007f;
-            }
-        }
+  <!-- Cloudflare Turnstile: bot protection for the newsletter form -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-        .neon-btn {
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        .neon-btn:hover {
-            box-shadow: 0 0 15px #00f3ff;
-            background-color: rgba(0, 243, 255, 0.1);
-        }
-    </style>
+  <!-- Primary meta -->
+  <title>L.M. Douglas — Chronicles of the Endless War | Epic Fantasy Series</title>
+  <meta name="description"
+    content="Enter the realm of Gharantia in L.M. Douglas’s Chronicles of the Endless War — an epic fantasy series of gods, war, and destiny. Read the books and join the newsletter." />
+  <meta name="author" content="L.M. Douglas" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#151515" />
+  <link rel="canonical" href="https://lmdouglas.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="L.M. Douglas" />
+  <meta property="og:title" content="L.M. Douglas — Chronicles of the Endless War" />
+  <meta property="og:description"
+    content="An epic fantasy series of gods, war, and destiny, set in the realm of Gharantia. Read the books and join the newsletter." />
+  <meta property="og:url" content="https://lmdouglas.com/" />
+  <meta property="og:image" content="https://lmdouglas.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Chronicles of the Endless War by L.M. Douglas" />
+  <meta property="og:locale" content="en_GB" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="L.M. Douglas — Chronicles of the Endless War" />
+  <meta name="twitter:description"
+    content="An epic fantasy series of gods, war, and destiny, set in the realm of Gharantia." />
+  <meta name="twitter:image" content="https://lmdouglas.com/og-image.jpg" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://lmdouglas.com/#author",
+        "name": "L.M. Douglas",
+        "jobTitle": "Author",
+        "nationality": "Scottish",
+        "url": "https://lmdouglas.com/",
+        "description": "L.M. Douglas is a Scottish author based in Edinburgh and the writer of the Chronicles of the Endless War epic fantasy series.",
+        "sameAs": [
+          "https://www.instagram.com/l_m_douglas_author/",
+          "https://www.facebook.com/100083225184556",
+          "https://www.threads.com/@l_m_douglas_author",
+          "https://www.tiktok.com/@lmdouglasauthor",
+          "https://x.com/LMD_Author",
+          "https://www.amazon.com/stores/author/B0CM9TB5LH"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://lmdouglas.com/#website",
+        "name": "L.M. Douglas",
+        "url": "https://lmdouglas.com/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://lmdouglas.com/#author" }
+      },
+      {
+        "@type": "BookSeries",
+        "@id": "https://lmdouglas.com/#series",
+        "name": "Chronicles of the Endless War",
+        "author": { "@id": "https://lmdouglas.com/#author" },
+        "inLanguage": "en",
+        "hasPart": [
+          {
+            "@type": "Book",
+            "name": "Gharantia's Guardian",
+            "position": 1,
+            "author": { "@id": "https://lmdouglas.com/#author" },
+            "inLanguage": "en",
+            "url": "https://mybook.to/LKYaLA"
+          },
+          {
+            "@type": "Book",
+            "name": "Gharantia's Fury",
+            "position": 2,
+            "author": { "@id": "https://lmdouglas.com/#author" },
+            "inLanguage": "en",
+            "url": "https://mybook.to/bXI2"
+          },
+          {
+            "@type": "Book",
+            "name": "Gharantia's Fate",
+            "position": 3,
+            "author": { "@id": "https://lmdouglas.com/#author" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Book",
+            "name": "Davga",
+            "description": "An Endless War novella.",
+            "author": { "@id": "https://lmdouglas.com/#author" },
+            "inLanguage": "en",
+            "url": "https://shorturl.at/anuOB"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body class="text-gray-300 font-mono antialiased">
 
-    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-md border-b border-vicePink/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <span class="font-gta text-3xl tracking-widest gta-title">M.A.D.L.P.</span>
-                </div>
-                
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="hover:text-viceCyan transition-colors">Inicio</a>
-                        <a href="#libros" class="hover:text-vicePink transition-colors">Catálogo</a>
-                        <a href="#blog" class="hover:text-viceOrange transition-colors">Blog</a>
-                        <a href="#about" class="hover:text-viceCyan transition-colors">Sobre Mí</a>
-                        <a href="#contacto" class="text-vicePink hover:text-white transition-colors">Contacto</a>
-                    </div>
-                </div>
-
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-vicePink focus:outline-none p-2 hover:text-viceCyan transition-colors" aria-label="Toggle Menu">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-black/95 border-b border-vicePink/40 px-4 pt-2 pb-6 space-y-1 shadow-[0_10px_20px_rgba(255,0,127,0.2)]">
-            <a href="#home" class="mobile-link block text-gray-300 hover:text-viceCyan py-3 font-bold tracking-wider border-b border-gray-900">Inicio</a>
-            <a href="#libros" class="mobile-link block text-gray-300 hover:text-vicePink py-3 font-bold tracking-wider border-b border-gray-900">Catálogo</a>
-            <a href="#blog" class="mobile-link block text-gray-300 hover:text-viceOrange py-3 font-bold tracking-wider border-b border-gray-900">Blog</a>
-            <a href="#about" class="mobile-link block text-gray-300 hover:text-viceCyan py-3 font-bold tracking-wider border-b border-gray-900">Sobre Mí</a>
-            <a href="#contacto" class="mobile-link block text-vicePink hover:text-white py-3 font-bold tracking-wider">Contacto</a>
-        </div>
-    </nav>
-
-    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center bg-[url('https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center bg-blend-overlay" style="background-color: rgba(11, 12, 16, 0.85);">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-viceCyan font-mono tracking-widest mb-2 uppercase text-sm animate-pulse">Capítulo 1: Bienvenidos a Vice City</h2>
-            <h1 class="font-gta text-7xl md:text-9xl gta-title mb-6 tracking-wide">Más Allá<br>De Las Páginas</h1>
-            <p class="text-xl md:text-2xl text-gray-400 mb-10 font-bold border-l-4 border-vicePink pl-4 inline-block">
-                by Adrián
-            </p>
-            <div class="flex justify-center gap-4">
-                <a href="#libros" class="neon-btn border border-viceCyan text-viceCyan px-8 py-3 rounded uppercase font-bold tracking-wider">
-                    Abrir el Libro
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div class="max-w-7xl mx-auto px-4 py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-            
-            <div id="libros" class="book-page book-spine p-6 md:p-10">
-                <h3 class="font-gta text-5xl text-white mb-8 border-b border-viceCyan pb-2">Inventario <span class="text-viceCyan text-2xl">_Libros</span></h3>
-                
-                <div class="mb-6 group flex flex-col sm:flex-row gap-4 bg-black/40 p-4 rounded-xl border border-gray-800 hover:border-vicePink transition-colors">
-                    <div class="w-28 md:w-36 flex-shrink-0 mx-auto sm:mx-0">
-                        <img src="la-ciudad-del-pecado-miami.jpg" alt="La Ciudad del Pecado Miami" class="w-full h-auto object-cover rounded shadow-[0_0_15px_rgba(255,0,127,0.4)] group-hover:shadow-[0_0_25px_rgba(0,243,255,0.7)] transition-all duration-300">
-                    </div>
-                    <div class="flex-1 flex flex-col justify-center text-center sm:text-left">
-                        <h4 class="text-2xl md:text-3xl font-bold font-gta text-vicePink group-hover:text-viceOrange transition-colors tracking-wide">La Ciudad del Pecado Miami</h4>
-                        <p class="text-xs text-viceCyan mb-2 uppercase tracking-widest">by Adrián y Kilian</p>
-                        <p class="text-gray-400 text-sm mb-3 italic">"Bienvenida a Miami. Donde los sueños brillan... y la tentación nunca duerme."</p>
-                        <div class="flex items-center justify-center sm:justify-start gap-1 text-viceOrange text-sm">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                            <span class="text-xs ml-2 text-gray-500 hidden md:inline">(Nivel de Búsqueda)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="https://www.wattpad.com/1584618622-entre-sevilla-y-el-desierto" target="_blank" rel="noopener noreferrer" class="block mb-6 group flex flex-col sm:flex-row gap-4 bg-black/40 p-4 rounded-xl border border-gray-800 hover:border-viceCyan transition-colors cursor-pointer">
-                    <div class="w-28 md:w-36 flex-shrink-0 mx-auto sm:mx-0">
-                        <img src="entre-sevilla-y-el-desierto.jpg" alt="Entre Sevilla y el Desierto" class="w-full h-auto object-cover rounded shadow-[0_0_15px_rgba(0,243,255,0.4)] group-hover:shadow-[0_0_25px_rgba(255,122,0,0.7)] transition-all duration-300">
-                    </div>
-                    <div class="flex-1 flex flex-col justify-center text-center sm:text-left">
-                        <h4 class="text-2xl md:text-3xl font-bold font-gta text-white group-hover:text-viceOrange transition-colors tracking-wide">Entre Sevilla y el Desierto</h4>
-                        <p class="text-xs text-viceCyan mb-2 uppercase tracking-widest">by Adrián Andrés Díaz Fortes & Samuel Alemán Durán</p>
-                        <p class="text-gray-400 text-sm mb-3">Un viaje visual que cruza fronteras, desde la magia arquitectónica y el calor de Andalucía hasta la infinita inmensidad de las dunas.</p>
-                        <div class="flex items-center justify-center sm:justify-start gap-1 text-viceOrange text-sm">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-gray-700">★</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div id="blog" class="book-page p-6 md:p-10">
-                <div class="flex justify-between items-end border-b border-vicePink pb-2 mb-8">
-                    <h3 class="font-gta text-5xl text-white">Misiones <span class="text-vicePink text-2xl">_Blog</span></h3>
-                    <span class="text-xs text-viceCyan animate-pulse">ESTADO: ONLINE</span>
-                </div>
-
-                <article class="mb-8 bg-black/40 p-5 border-l-2 border-viceOrange rounded-r hover:bg-black/60 transition-all cursor-pointer group">
-                    <h4 class="text-2xl font-gta tracking-wide text-white mb-1 group-hover:text-viceCyan transition-colors">Misión #01: Secretos en Ocean Drive</h4>
-                    <p class="text-xs text-viceCyan mb-3 font-bold">FECHA ESTELAR: 04 / JUNIO / 2026</p>
-                    <p class="text-gray-400 text-sm">Analizamos los entresijos y las inspiraciones reales detrás de la trama de La Ciudad del Pecado Miami. Lo que pasa en el club, se queda en el blog.</p>
-                </article>
-
-                <article class="mb-8 bg-black/40 p-5 border-l-2 border-viceOrange rounded-r hover:bg-black/60 transition-all cursor-pointer group">
-                    <h4 class="text-2xl font-gta tracking-wide text-white mb-1 group-hover:text-vicePink transition-colors">Diario de Desarrollo: De Sevilla a las Dunas</h4>
-                    <p class="text-xs text-viceCyan mb-3 font-bold">FECHA ESTELAR: 28 / MAYO / 2026</p>
-                    <p class="text-gray-400 text-sm">El contraste entre la Giralda y el desierto crudo. Cómo logramos unir dos mundos tan distintos en una sola obra fotográfica y narrativa.</p>
-                </article>
-            </div>
-        </div>
-    </div>
-
-    <section id="about" class="py-20 bg-gradient-to-b from-[#0b0c10] to-[#1a0b1c] border-y border-viceOrange/30">
-        <div class="max-w-4xl mx-auto px-4 flex flex-col items-center gap-8 text-center">
-            
-            <div class="w-56 sm:w-64 relative">
-                <div class="absolute inset-0 bg-viceCyan blur-lg opacity-20 rounded-lg"></div>
-                <div class="bg-gray-800 p-2 rounded-lg border-2 border-viceCyan relative z-10 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
-                    <div class="aspect-square bg-gray-700 w-full flex items-center justify-center overflow-hidden">
-                        <img src="foto-perfil-adri.jpg" alt="Foto de Adrián" class="w-full h-full object-cover">
-                    </div>
-                </div>
-            </div>
-
-            <div class="w-full">
-                <h3 class="font-gta text-6xl gta-title mb-4">El Arquitecto</h3>
-                <p class="text-lg text-gray-300 leading-relaxed mb-6 max-w-3xl mx-auto">
-                    Bienvenido a mi callejón digital. Soy Adrián, devorador de historias, autor y el cerebro detrás de <strong>Más Allá de las Páginas</strong>. Si las palabras fueran código, yo llevaría toda una vida programando mundos. Aquí vas a encontrar mis obras, mis misiones y todo lo que pasa por mi cabeza. 
-                </p>
-                <div class="inline-flex flex-wrap justify-center gap-4">
-                    <span class="bg-black border border-vicePink text-vicePink px-3 py-1 rounded text-sm transition-colors hover:bg-vicePink hover:text-white cursor-default">Escritor</span>
-                    <span class="bg-black border border-viceCyan text-viceCyan px-3 py-1 rounded text-sm transition-colors hover:bg-viceCyan hover:text-black cursor-default">Lector</span>
-                    <span class="bg-black border border-viceOrange text-viceOrange px-3 py-1 rounded text-sm transition-colors hover:bg-viceOrange hover:text-black cursor-default">Creador</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contacto" class="py-20 max-w-3xl mx-auto px-4 relative">
-        <div class="text-center mb-10">
-            <h3 class="font-gta text-5xl text-white mb-2">Contacto</h3>
-            <p class="text-gray-500">Frecuencia de contacto abierta. Deja tu mensaje.</p>
-        </div>
-        
-        <div class="relative">
-            <form id="contact-form" action="https://formsubmit.co/adrian.bta121dfdf@gmail.com" method="POST" class="bg-[#111218] p-8 border border-gray-800 rounded-xl shadow-[0_0_30px_rgba(255,0,127,0.1)]">
-                
-                <input type="hidden" name="_subject" value="Nuevo mensaje desde Más Allá de las Páginas (Contacto Web)">
-                <input type="hidden" name="_captcha" value="false">
-                
-                <div class="mb-6">
-                    <label class="block text-viceCyan text-sm mb-2 uppercase tracking-wider">Nombre</label>
-                    <input type="text" name="nombre" required class="w-full bg-black border border-gray-700 focus:border-vicePink rounded p-3 text-white outline-none transition-colors" placeholder="Ej. Juan Pérez">
-                </div>
-                <div class="mb-6">
-                    <label class="block text-viceCyan text-sm mb-2 uppercase tracking-wider">Email</label>
-                    <input type="email" name="email" required class="w-full bg-black border border-gray-700 focus:border-viceCyan rounded p-3 text-white outline-none transition-colors" placeholder="ejemplo@gmail.com">
-                </div>
-                <div class="mb-8">
-                    <label class="block text-viceCyan text-sm mb-2 uppercase tracking-wider">Mensaje a enviar</label>
-                    <textarea name="mensaje" rows="4" required class="w-full bg-black border border-gray-700 focus:border-viceOrange rounded p-3 text-white outline-none transition-colors resize-none" placeholder="Escribe aquí tu mensaje..."></textarea>
-                </div>
-                <button type="submit" id="submit-btn" class="w-full bg-transparent border-2 border-vicePink text-vicePink hover:bg-vicePink hover:text-white font-bold py-4 rounded transition-all uppercase tracking-widest flex justify-center items-center gap-2">
-                    <span>Enviar</span>
-                </button>
-            </form>
-
-            <div id="success-msg" class="hidden absolute inset-0 bg-[#111218]/95 backdrop-blur-sm rounded-xl border border-viceCyan flex-col items-center justify-center z-10 p-8 text-center transition-opacity duration-300">
-                <span class="text-6xl mb-4 block animate-bounce">👾</span>
-                <h4 class="font-gta text-5xl text-viceCyan mb-2 tracking-widest text-shadow-cyan">MENSAJE ENVIADO</h4>
-                <p class="text-gray-300 font-mono text-lg">El mensaje ha sido enviado con exito, te contactaré enseguida para hacer proyectos contigo.</p>
-                <button id="close-success" class="mt-8 border border-gray-600 text-gray-400 hover:text-white hover:border-white px-6 py-2 rounded uppercase text-sm tracking-widest transition-colors">Cerrar</button>
-            </div>
-        </div>
-    </section>
-
-    <footer class="border-t border-gray-800 bg-black py-8 text-center">
-        <p class="font-gta text-2xl text-gray-600 mb-2">MÁS ALLÁ DE LAS PÁGINAS</p>
-        <p class="text-xs text-gray-700">© 2026. Página hecha por Kilian</p>
-    </footer>
-
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            
-            if (mobileMenu.classList.contains('hidden')) {
-                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-            } else {
-                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
-            }
-        });
-
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
-            });
-        });
-
-    <!-- Lógica de Formulario AJAX -->
-
-        const contactForm = document.getElementById('contact-form');
-        const successMsg = document.getElementById('success-msg');
-        const closeSuccessBtn = document.getElementById('close-success');
-        const submitBtn = document.getElementById('submit-btn');
-
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const originalBtnText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<span>Encriptando datos...</span>';
-            submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
-
-            const formData = new FormData(contactForm);
-
-            fetch(contactForm.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json' 
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    contactForm.reset();
-                    successMsg.classList.remove('hidden');
-                    successMsg.classList.add('flex');
-                } else {
-                    alert('Error en la señal. Revisa la consola o intenta más tarde.');
-                }
-            })
-            .catch(error => {
-                console.error('Error de transmisión:', error);
-                alert('La conexión con el servidor falló.');
-            })
-            .finally(() => {
-                submitBtn.innerHTML = originalBtnText;
-                submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
-            });
-        });
-
-        closeSuccessBtn.addEventListener('click', () => {
-            successMsg.classList.add('hidden');
-            successMsg.classList.remove('flex');
-        });
-    </script>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
