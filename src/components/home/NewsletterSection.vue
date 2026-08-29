@@ -8,9 +8,7 @@
           <div class="book-cover-container">
             <img
               :src="coverSrc"
-              :srcset="coverSrcset"
-              sizes="(max-width: 1024px) 80vw, 400px"
-              alt=""
+              alt="Portada del libro"
               class="book-cover-image"
             />
             <div class="book-cover-glow"></div>
@@ -23,7 +21,7 @@
             <h2 class="newsletter-title">Sección de Noticias</h2>
 
             <p class="newsletter-subtitle">
-              Inscribe tu correo electrónico para recibir actualizaciones sobre nuevos lanzamientos y noticias de libros. ¡No te pierdas nada!
+              Inscribe tu correo electrónico para recibir actualizaciones sobre nuevos lanzamientos y noticias de los libros. ¡No te pierdas nada!
             </p>
 
             <!-- Newsletter Form (MailerLite via Netlify Function) -->
@@ -108,16 +106,10 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, reactive, ref } from "vue";
-import davgaCover480 from "../../assets/images/Davga_HR-480.webp";
-import davgaCover800 from "../../assets/images/Davga_HR-800.webp";
-import davgaCoverJpg from "../../assets/images/Davga_HR.jpg";
-import { supportsWebp } from "../../utils/webp.js";
 
-// Original JPG as universal fallback; responsive .webp via srcset where supported.
-const coverSrc = davgaCoverJpg;
-const coverSrcset = supportsWebp()
-  ? `${davgaCover480} 480w, ${davgaCover800} 800w`
-  : undefined;
+// Configuramos la ruta base para GitHub Pages apuntando a tu carpeta public/images/
+const base = import.meta.env.BASE_URL;
+const coverSrc = `${base}images/foto-perfil-adri.jpg`;
 
 const form = reactive({
   name: "",
@@ -129,17 +121,12 @@ const isSubmitting = ref(false);
 const submitMessage = ref("");
 const isError = ref(false);
 
-// Cloudflare Turnstile. The site key is public (safe to ship in the client); the
-// matching secret lives only in the Netlify function. `action` is echoed back by
-// siteverify and checked server-side so a token minted elsewhere can't be replayed here.
+// Cloudflare Turnstile.
 const TURNSTILE_SITE_KEY = "0x4AAAAAAENoETuta9nzmjKI";
 const TURNSTILE_ACTION = "newsletter";
 const turnstileEl = ref(null);
 let widgetId = null;
 
-// Explicitly render the widget once the async Turnstile script is ready. In an SPA
-// the component can mount before challenges.cloudflare.com/turnstile finishes loading,
-// so poll briefly for window.turnstile instead of relying on implicit auto-render.
 const renderTurnstile = () => {
   if (!turnstileEl.value) return;
   if (window.turnstile) {
@@ -162,18 +149,17 @@ onBeforeUnmount(() => {
 
 const handleSubmit = async () => {
   if (!form.agreeToTerms) {
-    submitMessage.value = "Please agree to the terms to continue.";
+    submitMessage.value = "Por favor, acepta los términos para continuar.";
     isError.value = true;
     return;
   }
 
-  // Require a Turnstile token before contacting the server.
   const turnstileToken =
     window.turnstile && widgetId !== null
       ? window.turnstile.getResponse(widgetId)
       : "";
   if (!turnstileToken) {
-    submitMessage.value = "Please complete the verification and try again.";
+    submitMessage.value = "Por favor, completa la verificación de seguridad.";
     isError.value = true;
     return;
   }
@@ -198,32 +184,31 @@ const handleSubmit = async () => {
 
     if (mlRes.ok) {
       submitMessage.value =
-        "Thank you! Look for a confirmation email in your inbox (or spam folder)";
+        "¡Gracias! Busca el email de confirmación en tu bandeja de entrada (o en spam).";
       isError.value = false;
       form.name = "";
       form.email = "";
       form.agreeToTerms = false;
     } else if (mlRes.status === 429) {
       submitMessage.value =
-        "Too many attempts. Please wait a minute and try again.";
+        "Demasiados intentos. Por favor, espera un minuto y vuelve a intentarlo.";
       isError.value = true;
     } else if (mlRes.status === 403) {
       submitMessage.value =
-        "Verification failed. Please reload the page and try again.";
+        "Verificación fallida. Por favor, recarga la página e inténtalo de nuevo.";
       isError.value = true;
     } else {
       const data = await mlRes.json().catch(() => ({}));
       submitMessage.value = data.error
-        ? `Couldn't subscribe: ${data.error}.`
-        : "Something went wrong. Please try again.";
+        ? `No se pudo suscribir: ${data.error}.`
+        : "Algo salió mal. Por favor, inténtalo de nuevo.";
       isError.value = true;
     }
   } catch (error) {
-    console.error("Form submission error:", error);
-    submitMessage.value = "Something went wrong. Please try again.";
+    console.error("Error al enviar el formulario:", error);
+    submitMessage.value = "Algo salió mal. Por favor, comprueba tu conexión.";
     isError.value = true;
   } finally {
-    // Reset the widget so the single-use token can't be replayed on a retry.
     if (window.turnstile && widgetId !== null) {
       window.turnstile.reset(widgetId);
     }
@@ -278,6 +263,7 @@ const handleSubmit = async () => {
   z-index: 2;
   transform: perspective(1000px) rotateY(-5deg);
   transition: transform 0.5s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
 .book-cover-container:hover .book-cover-image {
