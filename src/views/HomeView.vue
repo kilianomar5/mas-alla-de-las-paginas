@@ -20,7 +20,7 @@ import MapSection from '../components/home/MapSection.vue'
 import NewsletterSection from '../components/home/NewsletterSection.vue'
 
 const description =
-  'Enter the realm of Gharantia in L.M. Douglas’s Chronicles of the Endless War — an epic fantasy series of gods, war, and destiny. Read the books and join the newsletter.'
+  'Entróate en nuestras historias: desde el contraste de "Entre Sevilla y el Desierto" hasta la acción de "La Ciudad del Pecado Miami", "A Safehouse in the Hills" y "Un Crimen Elegante".'
 
 useHead({
   title: 'Mas Allá de las Páginas',

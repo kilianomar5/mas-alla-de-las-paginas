@@ -14,14 +14,13 @@
         <div class="footer-left">
           <div class="logo-section">
             <h2 class="logo-name">Mas Allá de las Páginas</h2>
-            <h3 class="logo-subtitle">Chronicles of the Endless War</h3>
+            <h3 class="logo-subtitle">Crónicas de Páginas</h3>
             <p class="author-description">
-              L.M. Douglas is a Scottish author based in Edinburgh. Her love for
-              writing began in childhood, but adulting got in the way of her
-              passion until she found the time and inspiration to bring her own
-              magical world to life during the COVID-19 lockdowns. She balances
-              her time between managing a busy pub with her husband, taking care
-              of her teenage son & cat Eddy, and crafting her intricate tales.
+             Adrián es un joven escritor de 19 años radicado en Tenerife. 
+             Su amor por la escritura despertó en la infancia, pero las responsabilidades de la adolescencia —exámenes, amigos y un sinfín de distracciones— terminaron 
+             relegando su pasión a un segundo plano. No fue hasta los encierros de la pandemia de 2020 cuando, entre aburrimiento y soledad, encontró el tiempo y 
+             la inspiración para dar vida a su propio mundo mágico. Hoy equilibra su rutina entre clases, un trabajo de medio tiempo en una cafetería de barrio, 
+             cuidar de su perra Luna y tejer tramas cada vez más intrincadas.
             </p>
           </div>
         </div>
@@ -31,29 +30,29 @@
           <div class="right-columns">
             <!-- Navigation Column -->
             <div class="nav-column">
-              <h4 class="section-title">Navigation</h4>
+              <h4 class="section-title">Navegación</h4>
               <ul class="nav-links">
-                <li><router-link to="/">HOME</router-link></li>
+                <li><router-link to="/">INICIO</router-link></li>
                 <!-- <li><router-link to="/about">ABOUT</router-link></li> -->
-                <li><router-link to="/map">MAP</router-link></li>
+                <li><router-link to="/map">MAPA</router-link></li>
                 <li><router-link to="/blog">BLOG</router-link></li>
               </ul>
             </div>
 
             <!-- Contact Column -->
             <div class="contact-column">
-              <h4 class="section-title">Contact</h4>
-              <a href="mailto:info@lmdouglas.com" class="contact-email"
-                >info@lmdouglas.com</a
+              <h4 class="section-title">Contacto</h4>
+              <a href="mailto:poner@gmail.com" class="contact-email"
+                >poner@gmail.com</a
               >
 
               <div class="social-links">
-                <FooterInstagram href="https://www.instagram.com/l_m_douglas_author/" />
-                <FacebookIcon href="https://www.facebook.com/100083225184556" />
-                <ThreadsIcon href="https://www.threads.com/@l_m_douglas_author" />
-                <FooterTikTok href="https://www.tiktok.com/@lmdouglasauthor" />
-                <XIcon href="https://x.com/LMD_Author" />
-                <AmazonIcon href="https://www.amazon.com/stores/author/B0CM9TB5LH" />
+                <FooterInstagram href="https://www.instagram.com/mas.alladelaspaginas/" />
+                <FacebookIcon href="https://www.facebook.com/people/M%C3%A1s-all%C3%A1-de-las-p%C3%A1ginas/61593795336965/?mibextid=wwXIfr&rdid=1IoVjuP43wti3QU0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HdVxjAN3D%2F%3Fmibextid%3DwwXIfr6" />
+                <ThreadsIcon href="https://www.threads.com/@MasAlladelasPaginas" />
+                <FooterTikTok href="https://www.tiktok.com/@ms.all.de.las.pgi1" />
+                <XIcon href="https://x.com/MasAlladelasPaginas" />
+                <AmazonIcon href="" />
               </div>
             </div>
           </div>
@@ -70,7 +69,7 @@
             rel="noopener noreferrer"
             class="portfolio-link"
           >
-            Website by Victor Blanco
+            Web Hecha por Kilian Omar
           </a>
         </p>
       </div>

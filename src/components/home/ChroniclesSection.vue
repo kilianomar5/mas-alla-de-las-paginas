@@ -5,7 +5,7 @@
       <!-- Section Header -->
       <div class="section-header">
         <h2 class="section-title">
-          <span class="title-line">Chronicles Of The Endless War</span>
+          <span class="title-line">Crónicas de Mas Allá de las Páginas</span>
         </h2>
       </div>
 
@@ -76,11 +76,11 @@ const books = chroniclesBooks;
 
 const formatStatus = (status) => {
   const statusMap = {
-    available: "Available Now",
-    "get-it-free": "Get It Free",
-    "coming-soon": "Coming Soon",
-    "pre-order": "Pre-order Now",
-    "new-release": "New Release!",
+    available: "Disponible Ahora",
+    "get-it-free": "Consigue Gratis",
+    "coming-soon": "Próximamente",
+    "pre-order": "Pre-ordenar Ahora",
+    "new-release": "Nueva Publicación!",
   };
   return statusMap[status] || status;
 };

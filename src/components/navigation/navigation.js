@@ -30,7 +30,7 @@ export const socialLinks = [
     id: 'facebook',
     label: 'Facebook',
     icon: 'facebook',
-    url: 'https://www.facebook.com/MasAlladelasPaginas'
+    url: 'https://www.facebook.com/people/M%C3%A1s-all%C3%A1-de-las-p%C3%A1ginas/61593795336965/?mibextid=wwXIfr&rdid=1IoVjuP43wti3QU0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HdVxjAN3D%2F%3Fmibextid%3DwwXIfr'
   },
   {
     id: 'twitter',
