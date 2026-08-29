@@ -13,7 +13,7 @@
         <!-- Left Column -->
         <div class="footer-left">
           <div class="logo-section">
-            <h2 class="logo-name">LM DOUGLAS</h2>
+            <h2 class="logo-name">Mas Allá de las Páginas</h2>
             <h3 class="logo-subtitle">Chronicles of the Endless War</h3>
             <p class="author-description">
               L.M. Douglas is a Scottish author based in Edinburgh. Her love for
@@ -63,7 +63,7 @@
       <!-- Bottom Row (Copyright) -->
       <div class="footer-bottom">
         <p class="copyright">
-          &copy; LM DOUGLAS {{ currentYear }} -
+          &copy; Mas Allá de las Páginas {{ currentYear }} -
           <a
             href="https://victorblancoweb.com"
             target="_blank"

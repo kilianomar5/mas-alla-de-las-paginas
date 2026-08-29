@@ -1,11 +1,11 @@
 <template>
   <main>
     <h1 class="sr-only">
-      L.M. Douglas — Chronicles of the Endless War, an epic fantasy series
+      Mas Allá de las Páginas — No solo páginas, sino un mundo de fantasía épica y aventuras. 
     </h1>
-    <HeroCarousel id="home" />
-    <ChroniclesSection id="chronicles" />
-    <MapSection id="map" />
+    <HeroCarousel id="inicio" />
+    <ChroniclesSection id="libros" />
+    <MapSection id="mapa" />
     <NewsletterSection id="newsletter" />
     <FooterSection id="footer" />
   </main>
@@ -23,14 +23,14 @@ const description =
   'Enter the realm of Gharantia in L.M. Douglas’s Chronicles of the Endless War — an epic fantasy series of gods, war, and destiny. Read the books and join the newsletter.'
 
 useHead({
-  title: 'L.M. Douglas — Chronicles of the Endless War | Epic Fantasy Series',
-  link: [{ rel: 'canonical', href: 'https://lmdouglas.com/' }],
+  title: 'Mas Allá de las Páginas',
+  link: [{ rel: 'canonical', href: 'https://kilianomar5.github.io/mas-alla-de-las-paginas/' }],
   meta: [
     { name: 'description', content: description },
-    { property: 'og:title', content: 'L.M. Douglas — Chronicles of the Endless War' },
+    { property: 'og:title', content: 'Mas Allá de las Páginas' },
     { property: 'og:description', content: description },
-    { property: 'og:url', content: 'https://lmdouglas.com/' },
-    { name: 'twitter:title', content: 'L.M. Douglas — Chronicles of the Endless War' },
+    { property: 'og:url', content: 'https://kilianomar5.github.io/mas-alla-de-las-paginas/' },
+    { name: 'twitter:title', content: 'Mas Allá de las Páginas' },
     { name: 'twitter:description', content: description }
   ]
 })

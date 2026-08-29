@@ -4,10 +4,10 @@
     <a href="/" class="logo-link" @click.prevent="handleClick">
       <img
         :src="logoSrc"
-        alt="LM Douglas Logo"
+        alt="Mas Allá de las Páginas Logo"
         class="logo-image"
       />
-      <span class="logo-text">LM DOUGLAS</span>
+      <span class="logo-text">Mas Allá de las Páginas</span>
     </a>
   </div>
 </template>

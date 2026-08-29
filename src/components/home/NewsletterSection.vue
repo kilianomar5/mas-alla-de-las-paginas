@@ -10,7 +10,7 @@
               :src="coverSrc"
               :srcset="coverSrcset"
               sizes="(max-width: 1024px) 80vw, 400px"
-              alt="Davga — character art from The Endless War series"
+              alt=""
               class="book-cover-image"
             />
             <div class="book-cover-glow"></div>
@@ -20,12 +20,10 @@
         <!-- Right Column: Newsletter Form -->
         <div class="newsletter-right">
           <div class="newsletter-content">
-            <h2 class="newsletter-title">The Endless War continues</h2>
+            <h2 class="newsletter-title">Sección de Noticias</h2>
 
             <p class="newsletter-subtitle">
-              Sign-up to my newsletter to receive exclusive updates, behind the
-              scenes context, character spotlights, cover reveals, and launch
-              updates!
+              Inscribe tu correo electrónico para recibir actualizaciones sobre nuevos lanzamientos y noticias de libros. ¡No te pierdas nada!
             </p>
 
             <!-- Newsletter Form (MailerLite via Netlify Function) -->
@@ -37,7 +35,7 @@
             >
               <!-- Form Fields -->
               <div class="form-group">
-                <label for="name" class="form-label">Full Name</label>
+                <label for="name" class="form-label">Nombre Completo</label>
                 <input
                   id="name"
                   v-model="form.name"
@@ -50,13 +48,13 @@
               </div>
 
               <div class="form-group">
-                <label for="email" class="form-label">Email Address</label>
+                <label for="email" class="form-label">Dirección de Email</label>
                 <input
                   id="email"
                   v-model="form.email"
                   type="email"
                   name="email"
-                  placeholder="your.email@example.com"
+                  placeholder="tu.email@ejemplo.com"
                   required
                   class="form-input"
                 />
@@ -73,7 +71,7 @@
                   class="form-checkbox"
                 />
                 <label for="terms" class="form-checkbox-label">
-                  I agree to receive updates about new releases and book news.
+                  Acepto recibir actualizaciones sobre nuevos lanzamientos y noticias de libros.
                 </label>
               </div>
 
@@ -82,8 +80,8 @@
 
               <!-- Submit Button -->
               <button type="submit" class="submit-btn" :disabled="isSubmitting">
-                <span v-if="!isSubmitting">Join my newsletter →</span>
-                <span v-else>Sending...</span>
+                <span v-if="!isSubmitting">Unirse a la Sección →</span>
+                <span v-else>Enviando...</span>
               </button>
 
               <!-- Success/Error Messages -->
@@ -98,8 +96,8 @@
 
             <!-- Privacy Note -->
             <p class="privacy-note">
-              🔒 We'll only use your email to send you our newsletter. No spam,
-              unsubscribe any time.
+              🔒 Solo usaremos tu email para enviarte nuestro boletín. Sin spam,
+              puedes darte de baja en cualquier momento.
             </p>
           </div>
         </div>

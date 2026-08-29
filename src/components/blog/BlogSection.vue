@@ -3,10 +3,10 @@
   <section class="blog-section">
     <iframe
       id="blogIframe"
-      src="https://lmdouglasauthor.blogspot.com/"
+      src=""
       width="100%"
       height="100%"
-      title="LM Douglas Author Blog"
+      title="Blog de Mas Allá de las Páginas"
     ></iframe>
   </section>
 
