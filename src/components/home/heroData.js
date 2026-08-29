@@ -1,5 +1,7 @@
-// Capturamos la ruta base que configuraste en vite.config.js
-const base = import.meta.env.BASE_URL;
+import safehouse from "../../assets/images/a-safehouse-in-the-hills.jpg";
+import sevilla from "../../assets/images/entre-sevilla-y-el-desierto.jpg";
+import miami from "../../assets/images/la-ciudad-del-pecado-miami.jpg";
+import crimen from "../../assets/images/un-crimen-elegante.jpg";
 
 export const heroSlides = [
   {
@@ -11,9 +13,9 @@ export const heroSlides = [
       "Una casa de seguridad en las colinas de Hollywood. Drogas, armas y un botín que todos quieren. La tensión aumenta cuando el pasado de Los Ángeles llama a la puerta.",
     ctaText: "Próximamente",
     ctaLink: "#",
-    bgImage: `${base}images/a-safehouse-in-the-hills.jpg`,
+    bgImage: safehouse,
     overlayColor: "rgba(21, 21, 21, 0.4)",
-    bookCover: `${base}images/a-safehouse-in-the-hills.jpg`,
+    bookCover: safehouse,
     textColor: "white",
     alignment: "left",
     badge: "Próximo Lanzamiento",
@@ -27,9 +29,9 @@ export const heroSlides = [
       "Una historia de contrastes donde el calor de las dunas del desierto choca con la histórica arquitectura y la vida vibrante de las calles de Sevilla.",
     ctaText: "Comprar ahora",
     ctaLink: "#",
-    bgImage: `${base}images/entre-sevilla-y-el-desierto.jpg`,
+    bgImage: sevilla,
     overlayColor: "rgba(21, 21, 21, 0.3)",
-    bookCover: `${base}images/entre-sevilla-y-el-desierto.jpg`,
+    bookCover: sevilla,
     textColor: "white",
     alignment: "left",
   },
@@ -42,9 +44,9 @@ export const heroSlides = [
       "Neón, playas y ambición. Adéntrate en el lado oscuro y seductor de la ciudad del vicio, donde cada decisión tiene un precio bajo el sol de Florida.",
     ctaText: "Comprar ahora",
     ctaLink: "#",
-    bgImage: `${base}images/la-ciudad-del-pecado-miami.jpg`,
+    bgImage: miami,
     overlayColor: "rgba(21, 21, 21, 0.4)",
-    bookCover: `${base}images/la-ciudad-del-pecado-miami.jpg`,
+    bookCover: miami,
     textColor: "white",
     alignment: "left",
   },
@@ -57,9 +59,9 @@ export const heroSlides = [
       "Tres amigos. Un pasado roto. Un último golpe. El arte esconde historias, pero algunas solo pueden ser robadas bajo la fría mirada de un museo protegido por láseres.",
     ctaText: "Próximamente",
     ctaLink: "#",
-    bgImage: `${base}images/un-crimen-elegante.jpg`,
+    bgImage: crimen,
     overlayColor: "rgba(21, 21, 21, 0.5)",
-    bookCover: `${base}images/un-crimen-elegante.jpg`,
+    bookCover: crimen,
     textColor: "white",
     alignment: "left",
   },
@@ -69,7 +71,7 @@ export const chroniclesBooks = [
   {
     id: 1,
     title: "ENTRE SEVILLA Y EL DESIERTO",
-    flatCover: `${base}images/entre-sevilla-y-el-desierto.jpg`,
+    flatCover: sevilla,
     status: "available",
     ctaText: "Comprar ahora",
     ctaLink: "#",
@@ -77,7 +79,7 @@ export const chroniclesBooks = [
   {
     id: 2,
     title: "LA CIUDAD DEL PECADO MIAMI",
-    flatCover: `${base}images/la-ciudad-del-pecado-miami.jpg`,
+    flatCover: miami,
     status: "available",
     ctaText: "Comprar ahora",
     ctaLink: "#",
@@ -85,7 +87,7 @@ export const chroniclesBooks = [
   {
     id: 3,
     title: "A SAFEHOUSE IN THE HILLS",
-    flatCover: `${base}images/a-safehouse-in-the-hills.jpg`,
+    flatCover: safehouse,
     status: "coming-soon",
     ctaText: "Próximamente",
     ctaLink: "#",
@@ -93,7 +95,7 @@ export const chroniclesBooks = [
   {
     id: 4,
     title: "UN CRIMEN ELEGANTE",
-    flatCover: `${base}images/un-crimen-elegante.jpg`,
+    flatCover: crimen,
     status: "coming-soon",
     ctaText: "Próximamente",
     ctaLink: "#",
