@@ -82,7 +82,7 @@ export const chroniclesBooks = [
     flatCover: miami,
     status: "available",
     ctaText: "Comprar ahora",
-    ctaLink: "#",
+    ctaLink: "https://hotmart.com/es/marketplace/productos/la-ciudad-del-pecado-miami/T106706706C",
   },
   {
     id: 3,
