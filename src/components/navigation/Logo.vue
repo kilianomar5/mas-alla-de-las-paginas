@@ -1,7 +1,7 @@
 <!-- src/components/navigation/Logo.vue -->
 <template>
   <div class="logo">
-    <a href="/" class="logo-link" @click.prevent="handleClick">
+    <a href="/public/images/logo.jpg" class="logo-link" @click.prevent="handleClick">
       <img
         :src="logoSrc"
         alt="Mas Allá de las Páginas Logo"
@@ -14,8 +14,8 @@
 
 <script setup>
 import { supportsWebp } from '../../utils/webp.js'
-import logoPng from '../../assets/images/logo-img.png'
-import logoWebp from '../../assets/images/logo-img.webp'
+import logoPng from '/public/images/logo.jpg'
+import logoWebp from '../../../public/images/logo.jpg'
 
 // Imported asset (so it resolves in production) + .webp where supported.
 const logoSrc = supportsWebp() ? logoWebp : logoPng

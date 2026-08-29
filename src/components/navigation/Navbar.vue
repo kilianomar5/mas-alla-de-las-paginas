@@ -100,12 +100,14 @@ onUnmounted(() => {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
+  min-height: 90px;  /* Cambiado de height a min-height */
+  height: auto;      /* Añadido para que se estire según el contenido */
   z-index: 1000;
   padding: 1.4rem 0 1rem 0;
   background: var(--white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 }
+
 .navbar-container {
   display: flex;
   align-items: center;

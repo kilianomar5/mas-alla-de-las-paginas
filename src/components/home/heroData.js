@@ -8,11 +8,11 @@ export const heroSlides = [
     id: 1,
     title: "A SAFEHOUSE IN THE HILLS",
     titleLines: ["A SAFEHOUSE", "IN THE HILLS"],
-    subtitle: "Próximamente",
+    subtitle: "Ver Trailer Ahora",
     description:
       "Una casa de seguridad en las colinas de Hollywood. Drogas, armas y un botín que todos quieren. La tensión aumenta cuando el pasado de Los Ángeles llama a la puerta.",
-    ctaText: "Próximamente",
-    ctaLink: "#",
+    ctaText: "Ver Trailer Ahora",
+    ctaLink: "https://www.instagram.com/reel/DbEoz8kswwr/?igsi=M2U5NnoxMzFqMDho",
     bgImage: safehouse,
     overlayColor: "rgba(21, 21, 21, 0.4)",
     bookCover: safehouse,
@@ -28,7 +28,7 @@ export const heroSlides = [
     description:
       "Una historia de contrastes donde el calor de las dunas del desierto choca con la histórica arquitectura y la vida vibrante de las calles de Sevilla.",
     ctaText: "Comprar ahora",
-    ctaLink: "https://wwww.enlace.com",
+    ctaLink: "https://www.wattpad.com/story/403206111-entre-sevilla-y-el-desierto?wp_page=create&wp_uname=AdrinDazFortes",
     bgImage: sevilla,
     overlayColor: "rgba(21, 21, 21, 0.3)",
     bookCover: sevilla,
@@ -43,7 +43,7 @@ export const heroSlides = [
     description:
       "Neón, playas y ambición. Adéntrate en el lado oscuro y seductor de la ciudad del vicio, donde cada decisión tiene un precio bajo el sol de Florida.",
     ctaText: "Comprar ahora",
-    ctaLink: "https://wwww.enlace.com",
+    ctaLink: "https://hotmart.com/es/marketplace/productos/la-ciudad-del-pecado-miami/T106706706C",
     bgImage: miami,
     overlayColor: "rgba(21, 21, 21, 0.4)",
     bookCover: miami,
@@ -64,6 +64,7 @@ export const heroSlides = [
     bookCover: crimen,
     textColor: "white",
     alignment: "left",
+    badge: "Próximo Lanzamiento",
   },
 ];
 
@@ -88,9 +89,9 @@ export const chroniclesBooks = [
     id: 3,
     title: "A SAFEHOUSE IN THE HILLS",
     flatCover: safehouse,
-    status: "coming-soon",
-    ctaText: "Próximamente",
-    ctaLink: "#",
+    status: "available",
+    ctaText: "Ver Trailer Ahora",
+    ctaLink: "https://www.instagram.com/reel/DbEoz8kswwr/?igsi=M2U5NnoxMzFqMDho",
   },
   {
     id: 4,

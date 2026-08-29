@@ -42,17 +42,17 @@
             <!-- Contact Column -->
             <div class="contact-column">
               <h4 class="section-title">Contacto</h4>
-              <a href="mailto:poner@gmail.com" class="contact-email"
-                >poner@gmail.com</a
+              <a href="mailto:adriandiazfortes70@gmail.com" class="contact-email"
+                >adriandiazfortes70@gmail.com</a
               >
 
-              <div class="social-links">
+             <div class="social-links">
                 <FooterInstagram href="https://www.instagram.com/mas.alladelaspaginas/" />
                 <FacebookIcon href="https://www.facebook.com/people/M%C3%A1s-all%C3%A1-de-las-p%C3%A1ginas/61593795336965/?mibextid=wwXIfr&rdid=1IoVjuP43wti3QU0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1HdVxjAN3D%2F%3Fmibextid%3DwwXIfr6" />
                 <ThreadsIcon href="https://www.threads.com/@MasAlladelasPaginas" />
                 <FooterTikTok href="https://www.tiktok.com/@ms.all.de.las.pgi1" />
                 <XIcon href="https://x.com/MasAlladelasPaginas" />
-                <AmazonIcon href="" />
+                <WhatsappIcon href="https://whatsapp.com/channel/0029VbCxqgX1yT24nNfuMR2u" />
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import AmazonIcon from "../svgs/AmazonIcon.vue";
+import WhatsappIcon from "../svgs/WhatsappIcon.vue";
 import FooterCorner from "../svgs/CornerDesign.vue";
 import FacebookIcon from "../svgs/FacebookIcon.vue";
 import FooterTikTok from "../svgs/FooterTikTok.vue";
@@ -95,7 +95,7 @@ export default {
     FacebookIcon,
     FooterTikTok,
     XIcon,
-    AmazonIcon,
+    WhatsappIcon,
   },
   computed: {
     currentYear() {

@@ -192,7 +192,6 @@ const checkAllLoaded = () => {
   font-weight: 700;
   letter-spacing: -0.1px;
   margin-bottom: 0.2rem;
-  /* text-transform: uppercase; */
   color: var(--white);
   white-space: pre-line;
 }
@@ -335,22 +334,17 @@ const checkAllLoaded = () => {
   background: transparent;
 }
 
+/* NUEVO ESTILO PARA LA ETIQUETA */
 .hero-book-badge {
   position: absolute;
-  top: -0.3rem;
-  right: 70px;
-  z-index: 3;
-  width: 78px;
-  height: 78px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 50%;
+  bottom: 20px;
+  right: -15px;
+  z-index: 10;
+  padding: 8px 16px;
+  border-radius: 4px;
   font-family: var(--font-body);
   font-weight: 900;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -361,15 +355,17 @@ const checkAllLoaded = () => {
     var(--gold-light) 50%,
     var(--gold-dark) 100%
   );
-  border: 4px solid var(--gold-light);
-  box-shadow:
-    0 6px 14px rgba(0, 0, 0, 0.45),
-    inset 2px 2px 5px rgba(0, 0, 0, 0.5),
-    inset -2px -2px 5px rgba(255, 255, 255, 0.45);
+  border: 2px solid var(--gold-light);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
 }
 
 .badge-word {
-  display: block;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.badge-word:last-child {
+  margin-right: 0;
 }
 
 .hero-book-cover:hover .book-cover-image {
@@ -422,8 +418,6 @@ const checkAllLoaded = () => {
   .alignment-right .hero-container {
     gap: 0rem;
   }
-  .hero-container {
-  }
   .hero-title {
     font-size: clamp(2.5rem, 8vw, 4rem);
   }
@@ -453,11 +447,16 @@ const checkAllLoaded = () => {
     padding: 2rem 1rem 0 1rem;
     min-height: fit-content;
   }
+  
+  /* Ajuste de la etiqueta para móviles */
   .hero-book-badge {
-    top: 2rem;
-    right: 50px;
+    bottom: 10px;
+    right: -5px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 }
+
 @media (max-width: 400px) {
   .hero-slide {
     position: relative;

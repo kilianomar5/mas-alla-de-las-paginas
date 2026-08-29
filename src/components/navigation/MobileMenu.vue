@@ -39,7 +39,7 @@
           <a 
             v-for="social in socialLinks" 
             :key="social.id"
-            :href="social.path" 
+            :href="social.url" 
             class="social-link"
             target="_blank"
             rel="noopener noreferrer"
