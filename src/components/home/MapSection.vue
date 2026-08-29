@@ -1,15 +1,13 @@
 <!-- src/components/home/MapSection.vue -->
 <template>
-  <section class="map-section" id="map">
+  <section class="map-section" id="mapa">
     <div class="container">
       <!-- Semantic heading + description for search engines and screen readers.
            Visually hidden because the map artwork carries its own title. -->
       <div class="map-header sr-only">
-        <h2 class="map-title">Explore the World of Gharantia</h2>
+        <h2 class="map-title">Explora las Ciudades del Pecado</h2>
         <p class="map-subtitle">
-          Journey across the realm of the Endless War — its duchies, cities,
-          gods, and the untamed lands beyond. Hover the map to uncover the lore
-          of each location.
+          Viaja a través de los escenarios de nuestras obras literarias — desde el desierto andaluz hasta las luces de neón de Miami. Pasa el ratón sobre el mapa para descubrir los secretos de cada ubicación.
         </p>
       </div>
       <div class="map-container" ref="mapContainer">
@@ -18,7 +16,7 @@
           :src="mapImageSrc"
           :srcset="mapImageSrcset"
           sizes="(max-width: 768px) 100vw, 1100px"
-          alt="World Map of The Endless War"
+          alt="Mapa Literario de Más Allá de las Páginas"
           class="map-image"
         />
         
@@ -76,9 +74,9 @@
         
         <!-- Map Overlay -->
         <div class="map-overlay">
-          <h2 class="map-title">The Gharantia Realm</h2>
+          <h2 class="map-title">Escenarios Literarios</h2>
           <p class="map-description">
-            Explore the realms, kingdoms, and battlefields of Gharantia.
+            Explora las calles, mansiones y paisajes donde cobran vida nuestras historias.
           </p>
         </div>
       </div>
@@ -90,6 +88,9 @@
 import { ref } from 'vue';
 import { mapPoints } from './heroData.js';
 import { supportsWebp } from '../../utils/webp.js';
+
+// Aquí asumimos que tienes un mapa propio. Puedes sustituir 'map-bw.jpeg' 
+// por una imagen de un mapa del mundo o un mapa genérico que subas a tu carpeta assets.
 import mapBwJpg from '../../assets/images/map-bw.jpeg';
 import mapBw600 from '../../assets/images/map-bw-600.webp';
 import mapBw1100 from '../../assets/images/map-bw-1100.webp';
@@ -102,6 +103,7 @@ const mapImageSrc = mapBwJpg;
 const mapImageSrcset = supportsWebp()
   ? `${mapBw600} 600w, ${mapBw1100} 1100w`
   : undefined;
+  
 // Tooltip art is hidden on mobile, so a single .webp (no responsive set) is fine.
 const pointImage = (point) =>
   supportsWebp() && point.imageWebp ? point.imageWebp : point.image;
@@ -421,8 +423,8 @@ const getTooltipStyle = (position) => {
 }
 .map-title {
   position: absolute;
-  top: 30%;
-  right: 27%;
+  top: 10%;
+  right: 10%;
   font-family: var(--font-heading);
   font-size: 2.4rem;
   line-height: 1.1;
@@ -431,13 +433,13 @@ const getTooltipStyle = (position) => {
 }
 .map-description {
   position: absolute;
-  top: 33.5%;
-  right: 25%;
+  top: 15%;
+  right: 10%;
   font-family: var(--font-body);
   font-size: 1.1rem;
   line-height: 1.6;
   opacity: 0.9;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 /* Responsive: hide interactive dots on mobile */
@@ -460,7 +462,7 @@ const getTooltipStyle = (position) => {
 }
 @media (max-width: 480px) {
   .map-section { padding: 0; }
-  .map-overlay { padding: rem; }
+  .map-overlay { padding: 1rem; }
   .map-title { font-size: 1.5rem; }
 }
 
