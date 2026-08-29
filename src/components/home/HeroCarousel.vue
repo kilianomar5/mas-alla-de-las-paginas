@@ -9,7 +9,7 @@
           <div class="hourglass-bottom"></div>
           <div class="sand"></div>
         </div>
-        <p class="loading-text">Loading</p>
+        <p class="loading-text">Cargando...</p>
       </div>
     </transition>
 

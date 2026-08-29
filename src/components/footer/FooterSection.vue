@@ -64,7 +64,7 @@
         <p class="copyright">
           &copy; Mas Allá de las Páginas {{ currentYear }} -
           <a
-            href="https://victorblancoweb.com"
+            href="https://imhunteridk.info"
             target="_blank"
             rel="noopener noreferrer"
             class="portfolio-link"

@@ -1,4 +1,5 @@
 <!-- src/components/home/ChroniclesSection.vue -->
+
 <template>
   <section class="chronicles-section">
     <div class="container" id="books">
@@ -21,8 +22,6 @@
           <div class="book-cover-container">
             <img
               :src="book.flatCover"
-              :srcset="webpSrcset(book.flatCover, [400, 800])"
-              sizes="(max-width: 768px) 80vw, 250px"
               :alt="book.title"
               class="book-cover-image"
               :class="{
@@ -48,6 +47,7 @@
                 <ClockIcon size="sm" />
               </button>
             </template>
+
             <template v-else>
               <a
                 :href="book.ctaLink"
@@ -68,7 +68,6 @@
 </template>
 
 <script setup>
-import { webpSrcset } from "../../utils/webp.js";
 import ClockIcon from "../svgs/ClockIcon.vue";
 import { chroniclesBooks } from "./heroData.js";
 
@@ -82,29 +81,26 @@ const formatStatus = (status) => {
     "pre-order": "Pre-ordenar Ahora",
     "new-release": "Nueva Publicación!",
   };
+
   return statusMap[status] || status;
 };
 
 const handleCtaClick = (link, status) => {
-  if (status === "coming-soon") return; // Disabled
+  if (status === "coming-soon") return;
 
   if (link.startsWith("#")) {
-    // It's an anchor link - scroll to section
     const targetId = link.substring(1);
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      // Smooth scroll to the element
       targetElement.scrollIntoView({
         behavior: "smooth",
         block: "start",
       });
 
-      // Update URL hash without jumping
       window.history.pushState(null, null, link);
     }
   } else {
-    // It's a regular link - navigate normally
     window.open(link, "_blank", "noopener,noreferrer");
   }
 };
@@ -117,7 +113,6 @@ const handleCtaClick = (link, status) => {
   color: var(--black);
   position: relative;
   overflow: hidden;
-
   max-width: 94%;
   margin: 0 auto;
 }
@@ -149,8 +144,7 @@ const handleCtaClick = (link, status) => {
 /* Books Grid */
 .books-grid {
   display: grid;
-  /* 4 across on desktop; the 1024px breakpoint drops to 2 (so it wraps 2-and-2,
-     never 3-and-1) and 768px goes single-column. */
+  /* 4 across on desktop; the 1024px breakpoint drops to 2 */
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
   max-width: 1100px;
@@ -163,10 +157,9 @@ const handleCtaClick = (link, status) => {
   flex-direction: column;
   background: var(--white);
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
   transition: all 0.4s ease;
   position: relative;
-  overflow: visible;
 }
 
 .book-card:hover {
@@ -330,7 +323,6 @@ const handleCtaClick = (link, status) => {
   box-shadow: 0px 10px 20px rgba(223, 172, 41, 0.3);
 }
 
-/* For Coming Soon button (disabled state) */
 .book-cta.disabled {
   cursor: not-allowed;
   opacity: 0.7;
@@ -359,21 +351,15 @@ const handleCtaClick = (link, status) => {
 
 /* Responsive */
 @media (max-width: 1170px) {
-  /* Reclaim the container gutters below the 4-across layout for more space. */
   .container {
     padding: 0;
   }
 
-  /* 2-and-2 (never 3-and-1). */
   .books-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
-  /* Scale the covers up (taller box) so the wide 2-up cards show less empty
-     white space. Sizing is driven by the container height only — with
-     object-fit: contain every cover renders at the same height regardless of
-     its individual aspect ratio, so they all stay the same size. */
   .book-cover-container {
     height: 380px;
     max-width: 320px;
@@ -407,6 +393,7 @@ const handleCtaClick = (link, status) => {
   .chronicles-section {
     padding-top: 0;
   }
+
   .container {
     padding: 0 0.5rem;
   }

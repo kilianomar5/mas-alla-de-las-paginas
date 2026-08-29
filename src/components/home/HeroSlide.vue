@@ -77,7 +77,6 @@
           </span>
           <img
             :src="slide.bookCover"
-            :srcset="webpSrcset(slide.bookCover, [500, 1000])"
             sizes="(max-width: 1024px) 80vw, 460px"
             :alt="slide.title"
             class="book-cover-image"
@@ -106,7 +105,7 @@ const props = defineProps({
 // Serve a viewport-appropriate .webp background to capable browsers
 // (smaller image on phones), original JPG as fallback.
 const vw = useViewportWidth();
-const bgSrc = computed(() => responsiveBg(props.slide.bgImage, vw.value));
+const bgSrc = computed(() => props.slide.bgImage);
 
 const emit = defineEmits(["image-loaded"]);
 
