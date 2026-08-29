@@ -41,7 +41,7 @@
                   v-model="form.name"
                   type="text"
                   name="name"
-                  placeholder="Enter your full name"
+                  placeholder="Escribe tu nombre completo"
                   required
                   class="form-input"
                 />
