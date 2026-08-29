@@ -12,17 +12,17 @@ import { useHead } from '@unhead/vue'
 import BlogSection from './BlogSection.vue';
 
 const description =
-  'News, behind-the-scenes context, and updates from L.M. Douglas, author of the Chronicles of the Endless War epic fantasy series.'
+  'Noticias, detrás de escena y actualizaciones sobre las obras literarias de Adrián Andrés Díaz Fortes y Samuel Alemán Durán.'
 
 useHead({
-  title: 'Blog — L.M. Douglas',
-  link: [{ rel: 'canonical', href: 'https://lmdouglas.com/blog' }],
+  title: 'Blog — Más Allá de las Páginas',
+  link: [{ rel: 'canonical', href: 'https://kilianomar5.github.io/mas-alla-de-las-paginas/blog' }],
   meta: [
     { name: 'description', content: description },
-    { property: 'og:title', content: 'Blog — L.M. Douglas' },
+    { property: 'og:title', content: 'Blog — Más Allá de las Páginas' },
     { property: 'og:description', content: description },
-    { property: 'og:url', content: 'https://lmdouglas.com/blog' },
-    { name: 'twitter:title', content: 'Blog — L.M. Douglas' },
+    { property: 'og:url', content: 'https://kilianomar5.github.io/mas-alla-de-las-paginas/blog' },
+    { name: 'twitter:title', content: 'Blog — Más Allá de las Páginas' },
     { name: 'twitter:description', content: description }
   ]
 })
