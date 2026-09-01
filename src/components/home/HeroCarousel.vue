@@ -286,7 +286,7 @@ onUnmounted(() => {
   width: 100%;
 }
 
-/* Indicators */
+/* Indicators (Modificado para verse perfecto en móvil sobre fondo blanco) */
 .carousel-indicators {
   position: absolute;
   bottom: 2rem;
@@ -301,8 +301,8 @@ onUnmounted(() => {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background: transparent;
+  border: 2px solid #151515;       /* Borde negro oscuro de alta visibilidad */
+  background: rgba(21, 21, 21, 0.2); /* Relleno semitransparente oscuro */
   cursor: pointer;
   padding: 0;
   position: relative;
@@ -310,13 +310,13 @@ onUnmounted(() => {
 }
 
 .carousel-indicator:hover {
-  border-color: var(--gold-dark);
-  background: rgba(97, 28, 45, 0.3);
+  border-color: #000000;
+  background: rgba(21, 21, 21, 0.5);
 }
 
 .carousel-indicator.active {
-  border-color: var(--gold-dark);
-  background: var(--gold-dark);
+  border-color: #000000;
+  background: #151515;             /* Negro sólido para el indicador activo */
 }
 
 .indicator-progress {

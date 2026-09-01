@@ -75,7 +75,7 @@ export const chroniclesBooks = [
     flatCover: sevilla,
     status: "available",
     ctaText: "Comprar ahora",
-    ctaLink: "#",
+    ctaLink: "https://www.wattpad.com/story/403206111?utm_source=ios&utm_medium=whatsapp&utm_content=share_writing&wp_page=create&wp_uname=AdrinDazFortes",
   },
   {
     id: 2,
