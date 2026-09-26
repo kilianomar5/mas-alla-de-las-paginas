@@ -414,10 +414,16 @@ const checkAllLoaded = () => {
 }
 
 @media (max-width: 768px) {
+  .hero-slide {
+    height: 100svh;
+    min-height: 800px;
+  }
+
   .alignment-left .hero-container,
   .alignment-right .hero-container {
     gap: 0rem;
   }
+  
   .hero-title {
     font-size: clamp(2.5rem, 8vw, 4rem);
   }
@@ -435,20 +441,22 @@ const checkAllLoaded = () => {
     height: 50px;
     padding: 0.875rem 1.2rem;
     font-size: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .book-cover-image {
     max-width: 320px;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .hero-container {
     padding: 2rem 1rem 0 1rem;
-    min-height: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
-  /* Ajuste de la etiqueta para móviles */
   .hero-book-badge {
     bottom: 10px;
     right: -5px;
@@ -458,39 +466,23 @@ const checkAllLoaded = () => {
 }
 
 @media (max-width: 400px) {
-  .hero-slide {
-    position: relative;
-    height: fit-content;
-  }
   .hero-title {
-    font-size: clamp(2.5rem, 8vw, 4rem);
+    font-size: clamp(2rem, 8vw, 3rem); 
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hero-description {
-    font-size: 16px;
-  }
-
-  .btn-hero {
-    width: 180px;
-    height: 50px;
-    padding: 0.875rem 1.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .book-cover-image {
-    max-width: 360px;
+    max-width: 280px;
     margin-top: 1rem;
   }
 
   .hero-container {
-    padding: 2rem 1rem 0 1rem;
-    margin-top: 30px;
-    min-height: fit-content;
-    margin-bottom: 5rem;
+    padding: 1rem;
+    margin-top: 10px;
+    margin-bottom: 2rem;
   }
 }
 </style>
